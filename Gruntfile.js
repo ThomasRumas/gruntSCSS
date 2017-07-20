@@ -10,13 +10,13 @@ module.exports = function(grunt) {
           style: 'compressed'
         },
         files: {                         // Liste des fichiers
-          'newSite.css': 'newSite.scss'       // 'destination': 'source'
+          '../newSite.css': '../newSite.scss'       // 'destination': 'source'
         }
       }
     },
     watch: {
       styles: {
-        files: ['../*.scss', '../_*.scss'], // tous les fichiers Sass 
+        files: '../*.scss', // tous les fichiers Sass 
         tasks: ['sass:dist']
       } 
     }
